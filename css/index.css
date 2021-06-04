@@ -1,4 +1,10 @@
 body {
+  background-color: #061f40;
+  color: white;
+  margin: 15px 10px;
+}
+
+#indexBody {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto;
@@ -6,9 +12,120 @@ body {
     "headerSection"
     "signInSection"
     "footerSection";
-  background-color: #061f40;
+}
+
+#filtersPageBody {
+  display: flex;
+  flex-direction: column;
+}
+
+#filterHeader {
+  align-self: center;
+}
+
+.venueSizeButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.amenitiesProvidedButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.proximityHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.proximityDistance {
+  font-size: 18px;
+}
+
+.amenitiesProvidedButton {
+  border: 1px solid #fe7d34;
+  border-radius: 15px;
+  padding: 9px;
+  text-align: center;
+  margin: 6px;
+  color: #fe7d34;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.venueSizeButton {
+  text-align: center;
+  border: 1px solid #fe7d34;
+  border-radius: 10px;
+  padding: 7px 24px;
+  margin: 5px;
+  color: #fe7d34;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.ratingStars {
+  display: flex;
+  justify-content: center;
+}
+
+.italic {
+  font-size: 10px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.proximityLine {
+  border-width: 2px;
   color: white;
-  margin: 15px 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.performanceTypeButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.performanceTypeButton {
+  text-align: center;
+  border: 1px solid #fe7d34;
+  border-radius: 10px;
+  padding: 7px 24px;
+  margin: 5px;
+  color: #fe7d34;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+#filterButton {
+  align-self: center;
+  margin-top: 30px;
+}
+
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #fe7d34;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
 }
 
 .cardPageBody {
@@ -20,6 +137,19 @@ body {
 
 .headerSectionIndex2 {
   display: flex;
+}
+
+.headerSectionFilterPage {
+  display: flex;
+}
+
+#filterBar {
+  color: #fe7e34;
+  font-size: 18px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
 }
 
 #searchPageH2 {
@@ -34,6 +164,10 @@ body {
   border-radius: 10px;
   border: 2px solid hsla(22, 99%, 60%, 1);
   margin-right: 6px;
+}
+
+.filterText {
+  margin-top: 10px;
 }
 
 #searchBarIcon {
@@ -203,6 +337,7 @@ h5 {
 
 p {
   margin: 6;
+  line-height: 15px;
 }
 
 .socialMediaText {
@@ -227,6 +362,10 @@ button {
   font-weight: 700;
   letter-spacing: 0em;
   text-align: center;
-  margin-top: 10px;
   pointer-events: none;
+}
+
+#filterTitle {
+  text-align: left;
+  margin: 10px 0px;
 }
