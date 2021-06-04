@@ -11,6 +11,37 @@ body {
   margin: 15px 10px;
 }
 
+.cardPageBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerSectionIndex2 {
+  display: flex;
+}
+
+#searchPageH2 {
+  align-self: flex-start;
+  margin-left: 10px;
+  padding: 10px 0px;
+}
+
+.searchBar {
+  height: 51px;
+  width: 293px;
+  border-radius: 10px;
+  border: 2px solid hsla(22, 99%, 60%, 1);
+  margin-right: 6px;
+}
+
+#searchBarIcon {
+  float: right;
+  padding-top: 18px;
+  padding-right: 10px;
+}
+
 .venueCard {
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
@@ -52,6 +83,42 @@ body {
   margin-top: 13px;
 }
 
+.attributes > p {
+  background-color: #f23d4c;
+  border-radius: 10px;
+  padding: 6px;
+}
+
+h1 {
+  font-family: Fugaz One;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0em;
+  margin: 0;
+}
+
+h2 {
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 0;
+}
+
+h3 {
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
 h4 {
   margin-top: 5;
   margin-bottom: 0;
@@ -77,39 +144,6 @@ h5 {
   padding-left: 8px;
 }
 
-.attributes > p {
-  background-color: #f23d4c;
-  border-radius: 10px;
-  padding: 6px;
-}
-
-h1 {
-  font-family: Fugaz One;
-  font-size: 72px;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 0em;
-}
-
-h2 {
-  font-family: Roboto;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 26px;
-  letter-spacing: 0em;
-  text-align: center;
-}
-
-h3 {
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 19px;
-  letter-spacing: 0em;
-  text-align: center;
-}
 .inputSection {
   background-color: white;
   font-family: Roboto;
@@ -152,11 +186,10 @@ h3 {
 
 .footerSection {
   grid-area: footerSection;
-  /*outline-style: solid;
-  outline-color: white; */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-top: 10px;
 }
 
 .socialMediaIcons {
@@ -165,6 +198,7 @@ h3 {
   width: 227px;
   margin-top: 10px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 p {
